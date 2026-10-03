@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio de Ezequiel Martín Bernal — Estudiante de Programación (UTN) y Desarrollador Jr. Proyectos en C#, C++, .NET y desarrollo web." />
+    <meta property="og:title" content="Ezequiel Bernal | Desarrollador Jr" />
+    <meta property="og:description" content="Portfolio personal — C#, C++, .NET, WinForms y desarrollo web." />
+    <meta property="og:type" content="website" />
+    <title>Ezequiel Bernal | Desarrollador Jr</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="#" class="logo">&lt;EB/&gt;</a>
+        <nav id="nav-menu">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#estudios">Estudios</a>
+            <a href="#skills">Skills</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-contenido">
+            <p class="hero-etiqueta">// portfolio v1.0</p>
+            <h1>Ezequiel Martín <span class="acento">Bernal</span></h1>
+            <p class="hero-rol">
+                <span id="typing"></span><span class="cursor">|</span>
+            </p>
+            <p class="hero-loc">📍 San Fernando, Buenos Aires</p>
+            <div class="hero-botones">
+                <a href="#proyectos" class="btn btn-primario">Ver proyectos</a>
+                <a href="assets/cv.pdf" class="btn btn-secundario" download>Descargar CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="seccion revelar">
+        <h2><span class="num">01.</span> Sobre mí</h2>
+        <div class="sobre-mi-contenido">
+            <p>
+                Tengo 24 años y actualmente curso la <strong>Tecnicatura en Programación en la UTN</strong>.
+                Me dedico a desarrollar proyectos y a aprender nuevos lenguajes, con foco en entender
+                el <em>por qué</em> de las cosas y no solo el <em>cómo</em>.
+            </p>
+            <p>
+                Creo firmemente en la <strong>práctica y el error</strong> como motor de aprendizaje:
+                equivocarse, corregir y volver a intentar es lo que lleva a entender un concepto a fondo.
+                Mi objetivo es seguir creciendo como desarrollador, sumar experiencia real y aportar
+                en equipos donde pueda aprender de otros.
+            </p>
+        </div>
+    </section>
+
+    <!-- ESTUDIOS -->
+    <section id="estudios" class="seccion revelar">
+        <h2><span class="num">02.</span> Estudios</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-punto"></span>
+                <div class="timeline-contenido">
+                    <span class="badge badge-activo">En curso</span>
+                    <h3>Tecnicatura en Programación</h3>
+                    <p class="timeline-meta">UTN — Universidad Tecnológica Nacional · 2025 – Actualidad</p>
+                    <p>Formación en lógica de programación, estructuras de datos, bases de datos y desarrollo de aplicaciones de escritorio y web.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-punto"></span>
+                <div class="timeline-contenido">
+                    <span class="badge">Finalizado</span>
+                    <h3>Educación Secundaria</h3>
+                    <p class="timeline-meta">Completa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="seccion revelar">
+        <h2><span class="num">03.</span> Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-grupo">
+                <h3>💻 Lenguajes</h3>
+                <ul>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript <small>(en proceso)</small></li>
+                    <li>SQL <small>(básico)</small></li>
+                </ul>
+            </div>
+            <div class="skill-grupo">
+                <h3>🛠️ Herramientas</h3>
+                <ul>
+                    <li>Visual Studio Community</li>
+                    <li>VS Code</li>
+                    <li>Code::Blocks</li>
+                    <li>Git &amp; GitHub</li>
+                </ul>
+            </div>
+            <div class="skill-grupo">
+                <h3>⚙️ Tecnologías</h3>
+                <ul>
+                    <li>.NET</li>
+                    <li>WinForms</li>
+                    <li>Bases de datos relacionales</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="seccion revelar">
+        <h2><span class="num">04.</span> Proyectos</h2>
+        <div class="proyectos-grid">
+
+            <article class="proyecto-card">
+                <div class="proyecto-header">
+                    <span class="badge badge-grupal">Grupal</span>
+                    <span class="proyecto-icono">✂️</span>
+                </div>
+                <h3>Sistema de Gestión de Barbería</h3>
+                <p>
+                    Sistema de escritorio que registra y gestiona <strong>turnos, pagos y cantidad de cortes</strong>
+                    por barbero o cliente, junto con el tipo de servicio.
+                </p>
+                <p class="proyecto-rol"><strong>Mi rol:</strong> <em> Lógica de turnos, Informes y Menus </em></p>
+                <div class="tech-tags">
+                    <span>C++</span><span>Code::Blocks</span>
+                </div>
+                <a class="proyecto-link" href="https://github.com/AugustoMartinFernandez/Sistema_Gestion_Barberia" target="_blank" rel="noopener">Ver repositorio →</a>
+            </article>
+
+            <article class="proyecto-card">
+                <div class="proyecto-header">
+                    <span class="badge badge-grupal">Grupal</span>
+                    <span class="proyecto-icono">🎲</span>
+                </div>
+                <h3>Enfrentados</h3>
+                <p>
+                    Juego básico por turnos con <strong>tirada de dados al azar y sistema de puntos</strong>.
+                    Primer proyecto desarrollado en la carrera.
+                </p>
+                <p class="proyecto-rol"><strong>Mi rol:</strong> <em>Desarrollo de lógica de juego</em></p>
+                <div class="tech-tags">
+                    <span>C++</span><span>Code::Blocks</span>
+                </div>
+                
+                <a class="proyecto-link" href="https://github.com/BraianGimenezJ/Enfrendados" target="_blank" rel="noopener">Ver repositorio →</a>
+            </article>
+
+            <article class="proyecto-card">
+                <div class="proyecto-header">
+                    <span class="badge badge-grupal">Grupal</span>
+                    <span class="proyecto-icono">📦</span>
+                </div>
+                <h3>Gestión de Catálogo Comercial</h3>
+                <p>
+                    Aplicación de escritorio para administrar artículos de un comercio (ferretería, panadería, kiosco).
+                    Permite registrar productos con <strong>imagen, marca, categoría y precio</strong>.
+                </p>
+                <p class="proyecto-rol"><strong>Mi rol:</strong> <em>Logica de FrmMarca en general</em></p>
+                <div class="tech-tags">
+                    <span>C#</span><span>.NET</span><span>WinForms</span><span>Visual Studio</span>
+                </div>
+                <a class="proyecto-link" href="https://github.com/DEMI-7/tp-winform-equipo-0" target="_blank" rel="noopener">Ver repositorio →</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- IDIOMAS -->
+    <section id="idiomas" class="seccion revelar">
+        <h2><span class="num">05.</span> Idiomas</h2>
+        <div class="idiomas-grid">
+            <div class="idioma-card">
+                <span class="idioma-nivel">Nativo</span>
+                <h3>Español</h3>
+            </div>
+            <div class="idioma-card">
+                <span class="idioma-nivel">Básico</span>
+                <h3>Inglés</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion revelar">
+        <h2><span class="num">06.</span> Contacto</h2>
+        <p class="contacto-texto">
+            ¿Querés contactarme por una propuesta, una colaboración o simplemente charlar sobre algo en especifico ? 
+            Estoy abierto a oportunidades como <strong>Desarrollador Jr</strong> o <strong>pasantías</strong>.
+        </p>
+        <div class="contacto-grid">
+            <a class="contacto-item" href="mailto:ezequiel.bernal44@gmail.com">
+                <span class="contacto-icono">✉️</span>
+                <span>ezequiel.bernal44@gmail.com</span>
+            </a>
+            <a class="contacto-item" href="https://github.com/EzeeeBeee" target="_blank" rel="noopener">
+                <span class="contacto-icono">🐙</span>
+                <span>github.com/EzeeeBeee</span>
+            </a>
+            <!-- LinkedIn: descomentar cuando lo tengas -->
+            <!--
+            <a class="contacto-item" href="https://linkedin.com/in/TUUSUARIO" target="_blank" rel="noopener">
+              <span class="contacto-icono">💼</span>
+              <span>LinkedIn</span>
+            </a>
+            -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© <span id="year"></span> Ezequiel Martín Bernal · Hecho con HTML, CSS y JS 🌲</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
